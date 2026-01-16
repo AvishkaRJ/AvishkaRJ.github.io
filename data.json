@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Scenario 1: Publicly Exposed Management Interface",
+    "question": "A cloud-based application exposes its management console directly to the internet with only single-factor authentication. What are the architectural flaws and what security questions should be raised during review?",
+    "answer": "The management interface should not be internet-facing and must be protected with strong authentication, network segmentation, and access controls. Questions should focus on admin access paths, MFA, logging, and isolation from production workloads."
+  },
+  {
+    "title": "Scenario 2: Flat Network Architecture",
+    "question": "All application tiers (web, app, database) are deployed in the same network segment with unrestricted east-west traffic. What risks does this create?",
+    "answer": "This enables lateral movement in case of compromise. Review should question network segmentation, zero-trust principles, and micro-segmentation controls."
+  }
+]
