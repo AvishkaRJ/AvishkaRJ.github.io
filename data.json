@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Scenario 1: Phishing Email",
+    "question": "You receive an email asking you to urgently reset your password via a provided link. What should you do?",
+    "answer": "Do not click the link. Verify the sender, report the email to security, and access the system only through the official website."
+  },
+  {
+    "title": "Scenario 2: Ransomware Alert",
+    "question": "Your system suddenly shows a ransom note demanding payment. What is your first action?",
+    "answer": "Disconnect the system from the network immediately and inform the incident response team. Do not pay the ransom."
+  }
+]
