@@ -1,11 +1,7 @@
 [
   {
     "title": "Scenario 1: "Smart Factory" Real-Time Monitoring",
-    "question": "Our manufacturing plant is upgrading its legacy assembly line. I am proposing a new IIoT (Industrial Internet of Things) architecture to monitor machine health (vibration, temperature, and RPM) in real-time to prevent unplanned downtime.1. Data Collection: We are installing 500 new wireless sensors across the factory floor. These sensors use a standard Zigbee/Wi-Fi mesh to communicate. To save on costs and time, we’ve purchased 'Plug-and-Play' industrial sensors from a third-party vendor. 2. Connectivity: The sensors transmit data to several Edge Gateways placed around the plant. These gateways are running a standard Linux distribution. To ensure the maintenance team can troubleshoot quickly from anywhere, I’ve enabled SSH and VNC access on these gateways, reachable via the corporate Wi-Fi.
-
-3. Data Processing & Cloud Integration: The Edge Gateways aggregate the data and push it directly to a Public Cloud Dashboard (managed by the sensor vendor) via our main corporate internet gateway. This allows our plant managers to view the health of the machines on their tablets even when they are off-site.
-
-4. Storage: For local buffering (in case the internet goes down), the Edge Gateways store the last 24 hours of sensor data in a local SQLite database on the device. Since this is just "vibration data" and not "customer data," I haven't enabled encryption on these local files to keep the CPU overhead low on the gateways.
+    "question": " I haven't enabled encryption on these local files to keep the CPU overhead low on the gateways."
 
 Architect's Pitch to the ARB:
 "The main goal here is speed and visibility. We can have this live in two weeks. It bypasses the need for complex firewall rules because we're using the existing corporate Wi-Fi, and the vendor's cloud platform handles all the heavy lifting for the analytics. We’re ready to go live on Monday."",
